@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>UFO Finder</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="wrapper", style="background-color: #0d2818;">
+        <div class="navbar navbar-expand-md", style="background-color: #020202;">
+            <img src="static/assets/ufo_thumb2.png" width="35" height="35" alt="">
+            <a href="index.html" class="navbar-brand text-left ml-2" style="color: white;">UFO Sightings</a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!--PAGE INTRO-->
+                <div class="col-3 my-4">
+                    <h3 style="color:#058c42;">The truth is up there, we just need to keep looking</h3>
+                    <p style="color: white;">For years, the illuminatis have hidden any proof of UFO sightings, but that has 
+                        come to end! Now that The Pentagon and the US Government released UFO videos we have them right 
+                        against the wall! The truth will show up once and for all, <b>vive la résistance!</b></p>
+                        <img class=" rounded w-100 h-auto" src="static/assets/milky_way_road.jpg" alt=""> 
+                </div>
+                <!--SEARCHER AND TABLE RESULTS-->
+                <div class="col-9 my-4">
+                    <h5 style="color: white;">Type the date you're looking for</h5>
+                    <form id="ufo-form">
+                        <div class="form-group mb-4">
+                            <input class="form-control" id="date-filter" placeholder="MM/DD/YYYY">
+                            <small class="form-text text-muted text-right">Type faster! They could be tracking us!</small>
+                            <button type="button" class="btn btn-warning" id="filter"> Discover the truth!</button>
+                        </div>
+                    </form>
+                    <table class="table table-striped my-2">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th class="table-head">Date</th>
+                                <th class="table-head">City</th>
+                                <th class="table-head">State</th>
+                                <th class="table-head">Country</th>
+                                <th class="table-head">Shape</th>
+                                <th class="table-head">Duration</th>
+                                <th class="table-head">Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody style="color:white">
+                            <!--pushed data-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <div class="card-footer text-muted text-center" style="background-color: #020202;">
+            They're among us...
+        </div>
+    </div>
+
+    <script src="static/js/ufo_data.js"></script>
+    <script src="static/js/index.js"></script>
+    
+</body>
+</html>

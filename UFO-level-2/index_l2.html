@@ -8,7 +8,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
         crossorigin="anonymous">
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <title>UFO Finder</title>
+    <title>UFO Finder L-2</title>
 </head>
 <body>
     <!--NAVBAR-->
@@ -30,10 +30,15 @@
                 </div>
                 <!--SEARCHER AND TABLE RESULTS-->
                 <div class="col-9 my-4">
-                    <h5 style="color: white;">Type the date you're looking for</h5>
+                    <h5 style="color: white;">Start your research!</h5>
                     <form id="ufo-form">
-                        <div class="form-group mb-4">
-                            <input class="form-control" id="date-filter" placeholder="MM/DD/YYYY">
+                        <div class="form-group mb-4" style="color: white;">
+                            <label for="input_date">Date</label>
+                            <input class="form-control mb-2" id="date-filter" placeholder="MM/DD/YYYY">
+                            <label for="input_state">State</label>
+                            <input class="form-control mb-2" id="state-filter" placeholder="State code (ca, nc, oh, ny...)">
+                            <label for="input_shape">UFO shape</label>
+                            <input class="form-control" id="shape-filter" placeholder="(flash, changing, light, triangle...)">
                             <small class="form-text text-muted text-right">Type faster! They could be tracking us!</small>
                             <button type="submit" class="btn btn-warning" id="filter"> Discover the truth!</button>
                         </div>
